@@ -18,13 +18,13 @@
           <tbody>
 
             <!-- template for content rows -->
-            <!-- <tr>
-              <td>123</td>
-              <td>John Doe</td>
-              <td>Alive</td>
-              <td>Human</td>
-              <td>Male</td>
-            </tr> -->
+            <tr *ngFor="let item of dataList">>
+              <td>{{item.id}}</td>
+              <td>{{item.name}}</td>
+              <td>{{item.status}}</td>
+              <td>{{item.species}}</td>
+              <td>{{item.gender}}</td>
+            </tr>
 
             <!-- template for loading state -->
             <!-- please make sure the column takes the full row -->
