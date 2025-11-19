@@ -17,9 +17,15 @@
   }
 
   > p {
-    margin: 0;
-    font-size: var(--box-font-size);
-    padding: 16px;
+      margin: 0;
+  font-size: var(--box-font-size);
+  padding: 16px;
+
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;       /* limit to 4 lines */
+  overflow: hidden;
+  text-overflow: ellipsis;     /* show ... at the end */
 
     /**
      * here's your task
